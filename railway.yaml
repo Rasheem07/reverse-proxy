@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: api-server
+    env: docker
+    repo: https://github.com/Rasheem07/reverse-proxy
+    branch: main
+    buildCommand: docker build -t reverse-proxy .
+    plan: free
